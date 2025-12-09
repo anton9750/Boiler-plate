@@ -6,14 +6,7 @@
 //     </div>
 // </div>
 
-/*
-man laver en cookie consent div, herefter en div id cookie-box
 
-
-
-
-
-*/
 
 
 const cookieBox = document.getElementById("cookie-consent");
