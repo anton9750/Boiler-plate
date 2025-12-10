@@ -1,0 +1,18 @@
+img{
+    width: 100%;
+}
+.hero-header {
+  background-image: url("../images/Hero-Image-Brianair-Interiur.jpg");
+  background-size: cover;
+  background-position: top center; /* important */
+  height: 1000px; /* increase this */
+  display: flex;
+  align-items: flex-start;
+  padding: 40px;
+}
+.hero-img {
+  width: 500px;
+   background: rgba(255, 255, 255, 0.6);
+   padding: 4rem;
+
+}
