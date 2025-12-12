@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Desktop default */
+.hero-header {}
+.hero-header .hero-img img {}
+nav {}
+nav .nav-left {}
+nav .nav-right {}
+.burger { display: none; }
+.section-1 {}
+.section-1 video {}
+.section-1 article {}
+.section-2 .image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+.section-3 .three-images {
+    display: flex;
+    gap: 2rem;
+}
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ≤1200px */
+@media (max-width: 1200px) {
+    .section-2 .image-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .section-3 .three-images {
+        gap: 1.5rem;
+    }
+}
+
+/* ≤992px */
+@media (max-width: 992px) {
+    nav .nav-left,
+    nav .nav-right {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+    .section-1 .seperator {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-2 .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .section-3 .three-images {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .footer-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+/* ≤768px */
+@media (max-width: 768px) {
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    nav.active ul {
+        display: flex;
+    }
+    .section-1 h1 { font-size: 1.8rem; }
+    .section-2 .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ≤576px */
+@media (max-width: 576px) {
+    .hero-img img { width: 70%; }
+    nav { padding: 0 1rem; }
+    .section-1 video { width: 100%; }
+    article h2 { font-size: 1.4rem; }
+    .section-2 .image-grid {
+        grid-template-columns: 1fr;
+    }
+    .section-3 .main-img { width: 100%; }
+    .three-images figure img { width: 100%; }
+    footer .footer-content { text-align: center; }
+}
+
+/* ≤400px */
+@media (max-width: 400px) {
+    nav .nav-left li,
+    nav .nav-right li { font-size: 0.85rem; }
+    article span { display: block; }
+    .section-3 figure figcaption h1 { font-size: 1.2rem; }
+}
