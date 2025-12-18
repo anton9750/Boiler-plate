@@ -1,0 +1,99 @@
+/* IMPORTS A "GOOGLE FONT" */
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100;200;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(nav.css);
+/* #region GLOBAL STYLES */
+html {
+  scroll-behavior: smooth;
+  top: 0;
+}
+/* VARIABLES IN HTML: */
+:root {
+    --white: #fcfbfc;
+    --light: #ededed;
+    --dark: #333;
+    --black: #212121;
+    --blue-dark: #32538b;
+    --blue-light: #4f74b4;
+    --curry-dark: #e4b834;
+    --curry-light: #ffd51b;
+    --primary: #4496ee;
+    --secondary: #ddd;
+    --danger: #d44;
+    --success: #3b833b;
+}
+body{
+    font-family: "Montserrat";
+    font-weight: 400;
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+/* TEXT FORMATTING */
+h1, h2, h3, h4{
+    font-family:'Smooch Sans', sans-serif; /*"SMOOCH SANS" IS A GOOGLE FONT*/
+    margin: 0;
+    font-weight: 400;
+    color: var(--blue-dark);
+}
+/* ALL PARAGRAPHS IN CONTENT*/
+main p, main a{
+    font-weight: 400;
+    color: var(--dark);
+    text-decoration: none;
+    margin: 0.8rem 0;
+}
+/* GLOBAL BLOCKS */
+.container-main{
+    max-width: 1300px;
+    margin: auto;
+}
+/* ALL IMAGES */
+img{
+    display: block;
+    width: 100%;
+}
+figure{
+    margin: 0;
+    padding: 0;
+}
+video{
+    width: 100%;
+}
+/* ALL FIGURES */
+main figure{
+    margin: 0;
+    padding: 0;
+}
+/* #endregion */
+.header-main{
+    
+}
+/* MEDIA QUERIES: ONE "OVER" ("min-width"), and ONE "UNDER" ("max-width")! ;0) */
+/* OVER 400px */
+@media (min-width: 400px) {
+    body{
+    
+    };
+}
+/* OVER 800px */
+@media (min-width: 800px) {
+    body{
+   
+    }
+
+}
+/* OVER 1300px */
+@media (min-width: 1300px) {
+    body{
+   
+}
+}
+
+/* UNDER 600px */
+/* @media (max-width: 600px) {
+    body{
+        background-color: var(--red-dark);
+    }
+} */
+
